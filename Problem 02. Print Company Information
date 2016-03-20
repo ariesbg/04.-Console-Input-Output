@@ -1,0 +1,60 @@
+/*Problem 2. Print Company Information
+
+    A company has name, address, phone number, fax number, web site and manager. The manager has first name, last name, age and a phone number.
+    Write a program that reads the information about a company and its manager and prints it back on the console.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            
+        Console.Write("{0,30}", @"Write a company name: ");
+        string companyName = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a company address: ");
+        string companyAddress = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a phone number: ");
+        string phoneNum = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a fax number: ");
+        string faxNum = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a web site: ");
+        string webSite = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a manager first name: ");
+        string managerFirstName = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a manager last name: ");
+        string managerLastName = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a manager age: ");
+        string managerAge = Console.ReadLine();
+
+        Console.Write("{0,30}", @"Write a manager phone: ");
+        string managerPhone = Console.ReadLine();
+
+        Console.WriteLine();
+        string symbol = new string('*', 22);
+        Console.WriteLine(symbol);
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("Info about the company");
+        Console.ForegroundColor = ConsoleColor.White;
+        string symbol1 = new string('*', 22);
+        Console.WriteLine(symbol1);
+
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("Company: {0}", companyName);
+        Console.WriteLine("Address: {0}", companyAddress);
+        Console.WriteLine("Tel.: {0}", phoneNum);
+        Console.WriteLine("Fax: {0}", faxNum);
+        Console.WriteLine("Web site: {0}", webSite);
+        Console.WriteLine("Manager: {0} {1} (age: {2}, tel. {3})",managerFirstName, managerLastName, managerAge, managerPhone);
+
+    }
+}
+
